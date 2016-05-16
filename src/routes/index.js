@@ -1,7 +1,8 @@
 'use strict';
 
+const _ = require('koa-route');
+const capture = require('../model/capture');
+
 module.exports = app => {
-  app.use(function *() {
-    this.body = 'Hello world';
-  });
+  app.use(_.get('/test', capture));
 };
