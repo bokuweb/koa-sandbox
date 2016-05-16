@@ -12,6 +12,7 @@
     "eslint-config-airbnb": "^9.0.1"
   },
   "scripts": {
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
