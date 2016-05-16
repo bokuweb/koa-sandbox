@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "koa": "^1.2.0"
+    "koa": "^1.2.0",
+    "koa-route": "^2.4.2",
+    "nightmare": "^2.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
@@ -12,7 +14,7 @@
     "eslint-config-airbnb": "^9.0.1"
   },
   "scripts": {
-    "start": "node src/app.js",
+    "start": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

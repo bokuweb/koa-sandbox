@@ -2,9 +2,8 @@
 
 const koa = require('koa');
 const app = module.exports = koa();
+const configureRoutes = require('./routes/');
 
-app.use(function *() {
-  this.body = 'Hello world';
-});
+configureRoutes(app);
 
 if (!module.parent) app.listen(process.env.PORT || 3000);
